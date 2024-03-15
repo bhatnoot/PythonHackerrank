@@ -24,7 +24,7 @@ import sys
 N = int(input().strip())
 
 if N % 2 != 0:
-    print "Weird"
+    print ("Weird")
 else:
     if N >= 2 and N <= 5:
         print ("Not Weird")
