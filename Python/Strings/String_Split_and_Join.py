@@ -23,6 +23,6 @@
 # Print the formatted string as explained above.
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-S = raw_input()
+S = input()
 T = S.split(" ")
 print "-".join(T)
