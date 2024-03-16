@@ -16,18 +16,12 @@
 # Print the modified string S.
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-import string
-
-lower = string.ascii_lowercase
-upper = string.ascii_uppercase
-S = raw_input()
-
-T = []
-for i in range(len(S)):
-    if S[i] in lower:
-        T.append(S[i].upper())
-    elif S[i] in upper:
-        T.append(S[i].lower())
-    else:
-        T.append(S[i])
-print ''.join(T)
+def swap_case(s):
+    x = ""
+    for c in s:
+        if c.isupper():
+            c = c.lower()
+        else:
+            c = c.upper()
+        x += c
+    return x
