@@ -25,4 +25,4 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 S = input()
 T = S.split(" ")
-print "-".join(T)
+print ("-".join(T))
