@@ -16,11 +16,11 @@
 # Output the integer number indicating the total number of occurrences of the substring in the original string.
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-string = raw_input()
-substring = raw_input()
-
-count = 0
-for i in range(len(string) - len(substring) + 1):
-    if string[i:i+len(substring)] == substring:
-        count += 1
-print count
+def count_substring(string, sub_string):
+    c=0
+    l=len(sub_string)
+    for i in range(len(string)):
+        s= string[i:i+l]
+        if s== sub_string:
+            c+=1
+    return c
