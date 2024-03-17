@@ -25,6 +25,7 @@
 
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-N = int(raw_input())
-O = set(map(int, raw_input().split()))
-print float(sum(O))/len(O)
+def average(array):
+    distinct_heights=set(array)
+    average= sum(distinct_heights)/len(distinct_heights)
+    return round(average,3)
