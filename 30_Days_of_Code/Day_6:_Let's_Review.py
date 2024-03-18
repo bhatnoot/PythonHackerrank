@@ -19,8 +19,15 @@
 # characters.
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-T = int(raw_input())
+n = int(input("Enter no of inputs\n"))
 
-for i in range(T):
-    S = str(raw_input())
-    print S[::2], S[1::2]
+for i in range(n):
+    test_string = input("enter "+str(i)+" string\n")
+    even = ""
+    odd = ""
+    for j in range(len(test_string)):
+        if j % 2 == 0:
+            even += test_string[j]
+        else:
+            odd += test_string[j]
+    print('{} {}'.format(even, odd))
